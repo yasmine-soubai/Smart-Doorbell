@@ -1,0 +1,2 @@
+# Smart-Doorbell
+  Updated 13 minutes ago I built a smart doorbell from scratch using Raspberry pi and electronic devices. I got to learn how to use the Linux Operating System and program with Python, HTML and CSS which are languages I never programmed with earlier. I talked to a former professor in electronics to understand more electronics tools and use them adequately, I did a lot of research to get familiar with the Raspberry Pi and the high-Level programming languages I used
