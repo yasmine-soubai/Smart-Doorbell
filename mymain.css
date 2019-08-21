@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
+
+body {
+	background-color: #F7F7F7;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	background-image: url("background-picture.jpg");
+	background-position: center ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+h1 {
+	position: absolute;
+	top: 14px;
+	left: 20px;
+	font-weight: 200;
+}
+
+h1:after {
+	/*To draw a line*/
+	content: ' ';
+	display: block;
+	border: 0.3px solid black;
+	border-radius: 4px;
+}
+
+img {
+	margin-right: 30px;
+	display: block;
+	border-radius: 8px;
+}
+
+iframe {
+	border-radius: 8px;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	height: 90%
+	width: 90%;
+}
+
+header {
+	position: relative;
+	height: 70px;
+	background-color: #F7F7F7;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	z-index: 5;
+}
+
+header h1 {
+	position: absolute;
+	color: black;
+	margin: 0;
+	top: 14px;
+	left: 10px;
+}
+
+.button {
+	margin-top: 10px;
+	margin: auto;
+	padding: 10px;
+	background-color: #C0C0C0;
+	border-radius: 10px;
+	border: 1px solid #CCC;
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+	border: none;
+	width: 50%;
+	cursor: pointer;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	font-size: 15px;
+	outline: none;
+	z-index: 1;
+}
+
+.button:hover {
+	background-color: #A9A9A9;
+	transition: all 0.5s ease;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* Home */
+
+.organize-pane {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.home-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 300;
+	margin-left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.home-text-container {
+	position: absolute;
+	color: black;
+	z-index: 1;
+	width: 250px;
+	margin-top: 50px;
+	/*height:250px;
+	/*margin:auto;*/
+	border-radius: 5px;
+	padding: 20px;
+	padding-bottom: 0px; /*add that one*/
+	/*margin-top: 20px;*/
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+	background-color: #F7F7F7;
+	/*left: 10;  maybe should be removed*/
+}
+
+.home-text-container input[type=submit] {
+	display: flex;
+	justify-content: center;
+    align-items: center; /*fix identation */
+	width: 100%;
+	font-size: 15px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid #CCC;
+	outline: none;
+	z-index: 1;
+	margin-top: 5px; /*add this*/
+}
+
+.img-pane{
+	position: absolute;
+	right: 0;
+	/*display: flex;
+	align-items: center;
+	justify-content: center; might remove that*/
+	z-index: 1;
+	top: 10;
+}
+
+.home-background-shader {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 0;
+}
+
+.stream-pane{
+	position: absolute;
+	display: flex;
+	/*align-items: center;
+	/*justify-content: center; whats the diff when we remove this*/
+	z-index: 1;
+	top: 150px;
+	left: 25px; /*try to change this to make the stream in the center*/
+}
+
+/* Create User */
+.password-form {
+	position: relative;
+	margin: auto;
+	width: 300px;
+	background-color: #FFF;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.password-form input[type=text], .password-form input[type=password] {
+	display: block;
+	margin-bottom: 20px;
+	width: 100%;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #CCC;
+	outline: none;
+}
